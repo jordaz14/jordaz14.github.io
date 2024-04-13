@@ -22,7 +22,63 @@ nav {
 
 main {
   flex: 1;
+  display: flex;
   background-color: rgb(248, 231, 231);
+}
+
+.container-hero-text,
+.container-hero-img {
+  flex: 1;
+}
+
+.container-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.container-hero-text h1 {
+  font-size: 200px;
+  line-height: 200px;
+}
+
+.container-hero-text p {
+  font-size: 64px;
+  line-height: 64px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+#form-email-input {
+  height: 100%;
+  background-color: #fafafa;
+  border: solid;
+  border-style: dotted;
+  border-width: 3px;
+  padding: 0px 4px;
+  border-radius: 5px;
+  font-family: "Josefin Slab";
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.form-email button {
+  height: 100%;
+  font-family: "Amatic SC";
+  color: white;
+  border-color: #a55fdc;
+  border-radius: 5px;
+  background-color: #a55fdc;
+  margin-left: 10px;
+  font-size: 32px;
+}
+
+.container-hero-img {
+  background-color: rgba(107, 107, 221, 0.199);
 }
 
 footer {
@@ -36,4 +92,13 @@ footer {
 a {
   color: inherit;
   text-decoration-thickness: 1px;
+}
+
+h1 {
+  font-family: "Amatic SC";
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
 }
