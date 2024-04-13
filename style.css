@@ -6,7 +6,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background-image: url(./images/monster-doodle-clear.png);
-  padding: 0px 16px;
+  padding: 0px 40px;
   font-family: "Josefin Slab", sans-serif;
 }
 
@@ -14,6 +14,10 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: #fafafa;
+  font-family: "Amatic SC";
+  font-size: 32px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 main {
@@ -24,4 +28,12 @@ main {
 footer {
   background-color: #fafafa;
   margin-top: auto;
+  font-family: "Amatic SC";
+  font-size: 32px;
+  text-align: right;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
 }
