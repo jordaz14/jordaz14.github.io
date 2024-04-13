@@ -1,13 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
   min-height: 100vh;
   background-image: url(./images/monster-doodle-clear.png);
+  padding: 0px 16px;
+  font-family: "Josefin Slab", sans-serif;
 }
 
 nav {
+  display: flex;
+  justify-content: space-between;
   background-color: #fafafa;
+}
+
+main {
+  flex: 1;
+  background-color: rgb(248, 231, 231);
 }
 
 footer {
