@@ -4,7 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-image: url(./assets/monster-doodle-clear.png);
   font-family: "Josefin Slab", sans-serif;
 }
@@ -26,8 +26,11 @@ footer {
 
 main {
   flex: 1;
-  display: flex;
   padding: 0px 40px;
+}
+
+.main-dual {
+  display: flex;
 }
 
 .container-hero-text,
@@ -112,6 +115,7 @@ a {
 
 h1 {
   font-family: "Amatic SC";
+  font-size: 64px;
   margin: 0px;
 }
 
