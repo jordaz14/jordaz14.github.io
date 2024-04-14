@@ -5,7 +5,7 @@ body {
   flex-direction: column;
   margin: 0;
   min-height: 100vh;
-  background-image: url(./images/monster-doodle-clear.png);
+  background-image: url(./assets/monster-doodle-clear.png);
   padding: 0px 40px;
   font-family: "Josefin Slab", sans-serif;
 }
@@ -14,16 +14,21 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: #fafafa;
-  font-family: "Amatic SC";
-  font-size: 32px;
   text-decoration: underline;
   text-decoration-thickness: 1px;
+}
+
+nav,
+footer {
+  font-size: 32px;
+  font-family: "Amatic SC";
+  font-weight: bold;
+  padding: 10px 0px;
 }
 
 main {
   flex: 1;
   display: flex;
-  background-color: rgb(248, 231, 231);
 }
 
 .container-hero-text,
@@ -78,14 +83,26 @@ form {
 }
 
 .container-hero-img {
-  background-color: rgba(107, 107, 221, 0.199);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-img {
+  position: relative;
+}
+
+.hero-img-doodle {
+  position: absolute;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 footer {
   background-color: #fafafa;
   margin-top: auto;
-  font-family: "Amatic SC";
-  font-size: 32px;
   text-align: right;
 }
 
