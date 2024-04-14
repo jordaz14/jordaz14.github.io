@@ -30,7 +30,7 @@ nav {
 
 nav,
 footer {
-  font-size: 32px;
+  font-size: 1.8rem;
   font-family: "Amatic SC";
   font-weight: bold;
   padding: 10px 40px;
@@ -149,6 +149,10 @@ table {
   width: 100%;
 }
 
+.banner-title span {
+  font-weight: normal;
+}
+
 .banner-quote {
   width: 100%;
   background-color: aquamarine;
@@ -160,10 +164,20 @@ table {
   padding-bottom: 10%;
 }
 
+.banner-quote p {
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
 .banner-nav {
+  font-family: "Amatic SC";
+  font-weight: bold;
+  font-size: 1.8rem;
   width: 100%;
   margin-top: auto;
   background-color: bisque;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container-blog {
