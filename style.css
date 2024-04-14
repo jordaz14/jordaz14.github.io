@@ -122,3 +122,13 @@ h1 {
 p {
   margin: 0px;
 }
+
+table {
+  border-spacing: 0px 20px;
+  font-size: 24px;
+}
+
+.container-banner {
+  background-color: #a65fdc21;
+  height: 94dvh;
+}
