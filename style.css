@@ -33,7 +33,8 @@ footer {
   font-size: 1.8rem;
   font-family: "Amatic SC";
   font-weight: bold;
-  padding: 10px 40px;
+  padding: 0px 40px;
+  height: 6dvh;
 }
 
 main {
@@ -41,8 +42,9 @@ main {
   padding: 0px 40px;
 }
 
-.main-dual {
+.main-index {
   display: flex;
+  flex-direction: column;
 }
 
 .container-hero-text,
@@ -54,17 +56,16 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: center;
+  align-items: center;
+}
+
+.container-hero-text h1,
+p {
+  margin: 0px;
 }
 
 .container-hero-text h1 {
-  font-size: 200px;
-  line-height: 200px;
-}
-
-.container-hero-text p {
-  font-size: 64px;
-  line-height: 64px;
+  font-size: 4rem;
 }
 
 form {
@@ -81,8 +82,6 @@ form {
   padding: 0px 4px;
   border-radius: 5px;
   font-family: "Josefin Slab";
-  font-size: 32px;
-  line-height: 32px;
 }
 
 .form-email button {
@@ -93,13 +92,12 @@ form {
   border-radius: 5px;
   background-color: #a55fdc;
   margin-left: 10px;
-  font-size: 32px;
 }
 
 .container-hero-img {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
 }
 
 .hero-img {
@@ -108,7 +106,6 @@ form {
 
 .hero-img-doodle {
   position: absolute;
-  width: 700px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -117,7 +114,7 @@ form {
 footer {
   background-color: #fafafa;
   margin-top: auto;
-  text-align: right;
+  text-align: center;
 }
 
 a {
@@ -131,7 +128,7 @@ h1 {
 
 table {
   border-spacing: 0px 20px;
-  font-size: 24px;
+  font-size: 1.2rem;
 }
 
 .container-banner {
@@ -139,7 +136,7 @@ table {
   flex-direction: column;
   align-items: center;
   background-color: #a65fdc21;
-  height: 90dvh;
+  height: 94dvh;
   padding: 0px 40px;
 }
 
@@ -166,7 +163,7 @@ table {
 
 .banner-quote p {
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .banner-nav {
@@ -209,5 +206,9 @@ table {
 @media screen and (min-width: 768px) {
   .img-container {
     width: 30%;
+  }
+
+  .main-index {
+    display: flex;
   }
 }
