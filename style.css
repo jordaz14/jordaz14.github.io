@@ -14,11 +14,12 @@ body {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 nav {
@@ -192,6 +193,10 @@ table {
   margin-top: 30px;
 }
 
+.container-blog h2 {
+  margin-top: 60px;
+}
+
 .img-container {
   width: 100%;
   height: 100%;
@@ -216,10 +221,14 @@ table {
 
 @media screen and (min-width: 768px) {
   .img-container {
-    width: 30%;
+    width: 60%;
   }
 
   .main-index {
     display: flex;
+  }
+
+  .container-blog {
+    padding: 0% 20%;
   }
 }
