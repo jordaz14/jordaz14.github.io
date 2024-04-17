@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
+/* || GENERAL STYLES */
+
 body {
   display: flex;
   flex-direction: column;
@@ -10,8 +12,9 @@ body {
   font-weight: 300;
 }
 
-body {
-  font-size: 100%;
+h1 {
+  font-size: 2em;
+  font-family: "Amatic SC";
 }
 
 p {
@@ -19,60 +22,15 @@ p {
   line-height: 1.4rem;
 }
 
-h1 {
-  font-size: 2em;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: underline;
+a {
+  color: inherit;
   text-decoration-thickness: 1px;
 }
 
-nav,
-footer {
-  font-size: 1.8rem;
-  font-family: "Amatic SC";
-  font-weight: bold;
-  padding: 0px 40px;
-  height: 6dvh;
-}
-
-main {
-  flex: 1;
-  padding: 0px 40px;
-}
-
-.main-index {
-  display: flex;
-  flex-direction: column;
-}
-
-.container-hero-text,
-.container-hero-img {
-  flex: 1;
-}
-
-.container-hero-text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-
-.container-hero-text h1,
-.container-hero-text p {
-  margin: 0px;
-}
-
-.container-hero-text h1 {
-  font-size: 4rem;
-}
-
-.container-hero-text p {
-  font-size: 1.6rem;
+table {
+  margin-top: -19.3px;
+  border-spacing: 0px 20px;
+  font-size: 1.2rem;
 }
 
 form {
@@ -81,72 +39,135 @@ form {
   gap: 10px;
 }
 
-#form-email-input {
-  height: 100%;
-  background-color: #fafafa;
-  border: solid;
-  border-style: dotted;
-  border-width: 2px;
-  padding: 4px 4px;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  font-family: "Josefin Sans";
-  font-weight: 300;
-  text-align: center;
-}
+/* || SITEWIDE */
 
-.form-email button {
-  height: 100%;
+nav,
+footer {
+  font-size: 1.8rem;
   font-family: "Amatic SC";
-  color: white;
-  border-color: #a55fdc;
-  border-radius: 5px;
-  background-color: #a55fdc;
-  font-size: 1.6rem;
-}
-
-.container-hero-img {
+  font-weight: bold;
+  padding: 0px 40px;
+  height: 6dvh;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  align-items: center;
 }
 
-.hero-img {
-  position: relative;
+nav {
+  justify-content: space-between;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
-.hero-img-doodle {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: contain;
+main {
+  flex: 1;
+  padding: 0px 40px;
 }
 
 footer {
   background-color: #fafafa;
   margin-top: auto;
+  justify-content: center;
+}
+
+/* || UTILITIES */
+
+.flex-center {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-a {
-  color: inherit;
-  text-decoration-thickness: 1px;
+.p-hlight {
+  font-style: italic;
+  background-color: #fafafa;
+  border: dotted;
+  border-width: 1px;
+  border-color: transparent;
+  border-top-color: #a55fdc;
+  border-bottom-color: #a55fdc;
+  padding: 10px;
 }
 
-h1 {
-  font-family: "Amatic SC";
+/* || INDEX PAGE */
+
+.main-index {
+  display: flex;
+  flex-direction: column;
+
+  .container-hero-text,
+  .container-hero-img {
+    flex: 1;
+  }
+
+  .container-hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .container-hero-text h1,
+  .container-hero-text p {
+    margin: 0px;
+  }
+
+  .container-hero-text h1 {
+    font-size: 4rem;
+  }
+
+  .container-hero-text p {
+    font-size: 1.6rem;
+  }
+
+  #form-email-input {
+    height: 100%;
+    background-color: #fafafa;
+    border: solid;
+    border-style: dotted;
+    border-width: 2px;
+    padding: 4px 4px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .form-email button {
+    height: 100%;
+    font-family: "Amatic SC";
+    color: white;
+    border-color: #a55fdc;
+    border-radius: 5px;
+    background-color: #a55fdc;
+    font-size: 1.6rem;
+  }
+
+  #form-prompt {
+    text-align: center;
+  }
+
+  .container-hero-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .hero-img {
+    position: relative;
+  }
+
+  .hero-img-doodle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+  }
 }
 
-table {
-  margin-top: -19.3px;
-  border-spacing: 0px 20px;
-  font-size: 1.2rem;
-}
+/* || ISSUE PAGES */
 
 .container-banner {
   display: flex;
@@ -199,11 +220,6 @@ table {
   margin-top: 60px;
 }
 
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-
 .img-container {
   width: 100%;
   height: 100%;
@@ -219,17 +235,6 @@ table {
   transform: translate(-50%, -50%);
 }
 
-.p-hlight {
-  font-style: italic;
-  background-color: #fafafa;
-  border: dotted;
-  border-width: 1px;
-  border-color: transparent;
-  border-top-color: #a55fdc;
-  border-bottom-color: #a55fdc;
-  padding: 10px;
-}
-
 .img-bg img {
   width: 100%;
   height: 100%;
@@ -237,9 +242,7 @@ table {
   object-fit: cover;
 }
 
-#form-prompt {
-  text-align: center;
-}
+/* || RESPONSIVE DESIGN */
 
 @media screen and (min-width: 768px) {
   .img-container {
