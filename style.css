@@ -235,6 +235,10 @@ table {
   object-fit: cover;
 }
 
+#form-prompt {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .img-container {
     width: 50%;
