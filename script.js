@@ -9,7 +9,7 @@ formButton.addEventListener("click", (e) => {
     email_id: formInput.value,
   };
   emailjs.send("service_3spwn2m", "template_115bpeu", params).then(() => {
-    formPrompt.textContent = `Welcome ${formInput.value}.`;
+    formPrompt.textContent = `welcome to my thoughts`;
     formInput.value = "";
   });
 });
