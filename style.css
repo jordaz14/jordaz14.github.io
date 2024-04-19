@@ -9,7 +9,7 @@ body {
   min-height: 100dvh;
   background-image: url(./assets/monster-doodle-clear.png);
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 340;
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 
 p {
   font-size: 1.2rem;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
 }
 
 a {
