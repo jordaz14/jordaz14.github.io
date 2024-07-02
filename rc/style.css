@@ -100,11 +100,16 @@ ul {
   list-style-type: none;
 }
 
+.til-list {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
 li {
   margin-bottom: 10px;
 }
 
-li:hover {
+.day-item:hover {
   font-weight: bold;
 }
 
