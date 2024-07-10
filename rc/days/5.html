@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 5 - TS & Array Headaches</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            If you'd like to update an array in React, you should avoid any
+            methods that mutate an array (e.g. push(), pop(), splice(), sort()),
+            and instead create a copy of the existing array and then set the
+            state to use that copy.
+          </li>
+          <li>
+            There's some unexpected behavior of React's useState when using
+            TypeScript. For example, if you pass an empty array as an argument
+            into the useState() without specifying its type, it's going to set
+            the type to be an array of never, thus being unable to later edit
+            the state of the array.
+          </li>
+          <li>
+            Quick fix, but I tried render an array of numbers inside my JSX
+            element & discovered that I needed to convert the output to string
+            since you can only render components or strings inside JSX.
+          </li>
+        </ul>
+        <p>
+          There were a handful of coffee chats today, and all were great! It
+          seems like a lot of people are working through ARENA, a curriculum
+          designed for upskilling in ML engineering. Although ML engineering
+          seems all the buzz and I have a background in statistics, I'm not
+          quite sure if it's something I'd be interested in. Although I haven't
+          invested time into it, so maybe I may prove myself wrong one day.
+        </p>
+        <p>
+          As for today, I create a dynamic list of text areas in React, and I'm
+          quite proud of the result. I was running into some hiccups with
+          TypeScript errors & the state logic of React, but I incorporated the
+          feature nonetheless. It's a bit interesting, but I'm learning to
+          prioritize functionality over design first. I used to opt for the
+          latter first, but I'm learning that functionality drives design.
+        </p>
+        <p>
+          Tomorrow, I'd like to read further into the docs on the dnd-kit react
+          library & hopefully incorporate some of that functionality into my
+          project. Also, I'm investigating how to cache form data in React &
+          avoid setting up a backend/db in the meanwhile. Admittedly, I'm a bit
+          less familiar with how to do this, although I will figure it out in
+          due time.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
