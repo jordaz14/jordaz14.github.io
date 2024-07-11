@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 6 - dnd kit</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            The JavaScript map() method has takes three parameters map((element,
+            index, array)); if you'd like to capture the index of an element via
+            map without utilizing the mandatory element parameter in your code,
+            you can insert '_' in its place to indicate that it's not being
+            used.
+          </li>
+          <li>
+            At a high level, dnd kit is a React library for building drag & drop
+            interfaces. If you'd like to create a sortable drag & drop list,
+            you'll need to: wrap your elements in both a DndContext &
+            SortableContext, map through your existing list to output a
+            SortableItem element, and create a handleDragEnd function to swap
+            the index of two elements once a user finishes dragging an element.
+          </li>
+          <li>
+            Object destructuring allows you to extract multiple properties from
+            an object in a single statement and bind them to variables. Array
+            destructuring is similar in that it allows you to unpact values from
+            arrays without repeating the variable = arr[idx] syntax for each
+            value.
+          </li>
+        </ul>
+        <p>
+          I had a coffee chat with Winston Cooke today. My first encounter with
+          an accountant turned software developer. It was a really refreshing
+          conversation because: (1) We related on a lot of the excel
+          inefficiencies that trouble a lot of Finance/Accounting teams from
+          streamlining the workflows; (2) He also left his role in accounting to
+          meaningfully upskill his coding ability for future opportunities; (3)
+          He's from Texas.
+        </p>
+        <p>
+          As for today, I created a sortable drag & drop list using the dnd-kit
+          library. I had to watch a few tutorials to get a sense of how to
+          implement it, and I'll likely need to read through the documentation
+          at a later point since there's some animation glitches when you move
+          two textareas of different heights over one another. Nonetheless, I'm
+          happy ot have implemented another feature into my project!
+        </p>
+        <p>
+          Tomorrow, I'd like to touch up the UI a little bit since it's a bit
+          unexciting. I don't know if this is a popular opinion amongst
+          developers who prioritize functionality, but I think UI goes a long
+          way when creating a web app. For example, Pomofocus is a relatively
+          simple 25 minute timer, but I love its simplicity and ease of use.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
