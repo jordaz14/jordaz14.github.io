@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 7 - UI Touch Up</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            tabindex is an attribute that allows developers to toggle whether an
+            element is focusable via the Tab key when navigating a page.
+            tabindex="-1" indicates that an element is not reachable via
+            keyboard navigation; however, this presents accessibility concerns
+            if the element has interactivity & the user is restricted to
+            keyboard use only.
+          </li>
+          <li>
+            I was wondering why my React app hosted through vercel would run
+            into build errors while still working locally via the 'npm run dev'
+            command, so I learned a little bit more about the difference between
+            development and build environments, and how the former includes code
+            refreshes and module replacements, whereas the latter minifies code
+            for production.
+          </li>
+          <li>
+            That there's something called Redux for state management in React. I
+            read a couple articles, but candidly, I still have no idea what it
+            does. I'll likely watch a tutorial just to get a sense of it, but I
+            don't anticipate needing it for my project in the meanwhile.
+          </li>
+        </ul>
+        <p>
+          I remember when I created my first website and spent most of my time
+          figuring out the HTML/CSS required to put the page together. There was
+          very little functionality, and I even used Tailwind instead of CSS so
+          I could expedite the process a bit! Nowadays, I'm still using
+          Tailwind... but only because I've done a lot practice with HTML/CSS
+          and feel comfortable in my fundamentals. Although hard to quantify,
+          I'm proud of how much quick I can fix design-related issues now that I
+          have more experience.
+        </p>
+        <p>
+          As for today, I touched up the UI of my project a lot. It's not a
+          revolutionary design per se, but it certainly makes my project much
+          more fun & appealing to interact with. I've touched on this in an
+          earlier blog, but I'm learning to prioritize functionality over design
+          first, as the former has implications for the latter. I used to map
+          out fairly thorough designs in figma before starting a project, but
+          this project is teaching me to prioritize functionality first and
+          design around it.
+        </p>
+        <p>
+          Tomorrow, I'd like to do more research into the ChatGPT API and see
+          how/if I can incorporate it into my project. Ideally, I'd like there
+          to be a prompt generator for my web app so users can have ideas when
+          writing, but I'd need to restrict the subject matter and response
+          length as well so a user couldn't 'abuse' this feature. Also, it's not
+          free to use, so I'm sure I'll learn a bit about how pricing for APIs
+          work.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
