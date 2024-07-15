@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 8 - Bugs Be Gone</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            indexof() vs findindex() are two JS array methods to locate elements
+            within any array; however, the latter allows you to pass a callback
+            function to execute on each value in the array, well suited for
+            locating the index of a specific property within an array of
+            objects. e.g. Arr.findIndex(x => x.property === value);
+          </li>
+          <li>
+            "Lifting state up" and useContext are two ways in React to send data
+            upwards from a child component into the parent component. 'Lifting
+            state up' requires passing the updater function from the parent via
+            props to the child, and updating the value within the child
+            component... and useContext I'll need to dig into that syntax.
+          </li>
+          <li>
+            Controlled input is a React concept in which form input data is
+            handled by state and dynamically updated via the onChange event
+            listener.
+          </li>
+        </ul>
+        <p>
+          I remember when I created my first website and spent most of my time
+          figuring out the HTML/CSS required to put the page together. There was
+          very little functionality, and I even used Tailwind instead of CSS so
+          I could expedite the process a bit! Nowadays, I'm still using
+          Tailwind... but only because I've done a lot practice with HTML/CSS
+          and feel comfortable in my fundamentals. Although hard to quantify,
+          I'm proud of how much quick I can fix design-related issues now that I
+          have more experience.
+        </p>
+        <p>
+          As for today, I touched up the UI of my project a lot. It's not a
+          revolutionary design per se, but it certainly makes my project much
+          more fun & appealing to interact with. I've touched on this in an
+          earlier blog, but I'm learning to prioritize functionality over design
+          first, as the former has implications for the latter. I used to map
+          out fairly thorough designs in figma before starting a project, but
+          this project is teaching me to prioritize functionality first and
+          design around it.
+        </p>
+        <p>
+          Tomorrow, I'd like to do more research into the ChatGPT API and see
+          how/if I can incorporate it into my project. Ideally, I'd like there
+          to be a prompt generator for my web app so users can have ideas when
+          writing, but I'd need to restrict the subject matter and response
+          length as well so a user couldn't 'abuse' this feature. Also, it's not
+          free to use, so I'm sure I'll learn a bit about how pricing for APIs
+          work.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
