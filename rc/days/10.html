@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 10 - Three.js</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            Three.js boilerplate code involves establishing a scene, camera,
+            renderer, and animation loop. A scene is where you .add() all
+            objects, light, and cameras; a camera establishes the FOV, aspect
+            ratio, and positioning within a scene and its objects; the renderer
+            uses WebGL to render 3D graphics and can be appended to the relevant
+            element in the DOM to establish sizing; and, the animation loop is a
+            function which refreshes the screen, assigns animations to objects,
+            and renders via the .render(scene, camera) method.
+          </li>
+          <li>
+            Within a scene, objects and 3D models both refer to elements that
+            can be added to a scene; more specifically, objects refer to basic
+            geometric shapes (e.g. cubes, spheres, and planes) that exist within
+            the 3.js library and can be simply created by defining an object's
+            geometry, its material (i.e texture), combining the two via: 'const
+            shape = THREE.Mesh(geometry, material)', and adding to the scene via
+            'scene.add(shape).'
+          </li>
+          <li>
+            As for 3D models: (1) these are more intricate 3D objects typically
+            rendered in an animation software like Blender; (2) they are very
+            expensive to purchase for commerical use, but some can be found for
+            free at Sketchfab; (3) Three.js recommends the glTF (GL Transmission
+            Format) for 3D models, which can subsequently be loaded into a scene
+            via the GLTFLoader(); (4) some adjustments may need to be made to
+            the object's positioning, camera angle, and lighting to ensure that
+            the 3D object is vsisible within the webpage.
+          </li>
+        </ul>
+        <p>
+          Today was fun. Today was impossible (somewhat). Today was 'The
+          Impossible Stuff Day', a day dedicated to pushing your programming
+          limits and pursuing something you'd consider slightly out of reach of
+          your abilities. I decided I wanted to learn Three.js and find a use
+          case for implementation into future projects.
+        </p>
+        <p>
+          For most of today I was scanning through Three.js documentation,
+          tutorials, and online articles to get a better sense of how I could
+          "get something off the ground". In the span of 6 hours, I went from
+          two blue lines on a dark screen, to a rotating blue screen, to a
+          Porsche on brick tiling, to creating a contact page with a 3D
+          astronaut floating in the middle of space. It was rewarding to see how
+          much I could accomplish in such a short amount of time, especially
+          when some days progress seems to move slow.
+        </p>
+        <p>
+          Tomorrow, I'd like to continue building out my React app. As it
+          stands, I'm still not quite happy with the visual design, but for the
+          time being I should prioritize incorporating other frontend
+          functionality such as a paragraph/word count tracker, registering
+          keyboard input via +/- keys, and a notification bar for other updates.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
