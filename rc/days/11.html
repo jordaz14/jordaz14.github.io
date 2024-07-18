@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 11 - onKeyDown Frown</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            React state updates are asynchronous, thus prompting the need for
+            useEffect(); whenever you call setState() in React, it places the
+            update in a queue, thus any logic contingent on the update of state
+            should be placed within a useEffect hook to update after render.
+          </li>
+          <li>
+            A basic grasp of Regex syntax, including literal characters,
+            metacharacters, quantifiers, grouping, and escaping to help with my
+            pattern matching in my app to autocapitalize the first letter of
+            every sentence. However, I think I'd need to run through some Regex
+            exercises just to get more comfortable with the syntax. It reminds
+            me of custom formatting in Excel.
+          </li>
+          <li>
+            onKeyPress is deprecated, and I should stick to using onKeyDown - a
+            small detail, but an important one nonetheless.
+          </li>
+        </ul>
+        <p>
+          Today I had my first pair programming, and it was a huge moment. Prior
+          to today, I had been nervous about working with others on a project,
+          as I was a bit worried that I might found out that I don't know
+          anything about coding (especially since a majority of participants
+          come from engineering backgrounds). However, the experience was really
+          reassuring! I had often felt a pressure that I should know everything,
+          and this experience reaffirmed that it's more about problem-solving
+          than anything else when working on a specific implementation.
+        </p>
+        <p>
+          For a good portion of today, I was trying to implement a feature in my
+          app where a user could hit two keys at the same time to create a new
+          text block as they were typing, but it became a bit more involved as I
+          gathered a better grasp on useEffect() while updating the state of my
+          two key array to gather user input. I didn't finish the feature and
+          instead implemented a row limit and autocapitalization feature to the
+          textareas in my application to create a more seamless writing
+          experience. However, I hope to revisit the keyboard input
+          implementation as I have a better idea of how to store the inputs.
+        </p>
+        <p>
+          Tomorrow, I'd like to do more outreach with others, participate in the
+          entrepeneurial ventures & browser engineering study groups, refactor
+          my React project and add comments as well. Also, I'd like to branch
+          out and watch a couple vides on UC San Diego's Data Structures &
+          Algorithms courses.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
