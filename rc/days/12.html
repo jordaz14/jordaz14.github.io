@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 12 - Back to Business</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            There are three ways to cache data in web applications:
+            LocalStorage, Session Storage, and Cookies; LocalStorage typically
+            holds around 5-10 MB per origin with data persisting after the
+            browser is closed; SessionStorage is similar in storage capacity but
+            only persists for as long as a page remains open; and, Cookies are
+            typically limited to 4KB and used for session management.
+          </li>
+          <li>
+            Embeddings are representations of objects, such as words, sentences,
+            or items, in a continuous vector space. Embeddings are used in
+            machine learning and natural language processing (NLP) to represent
+            data in a way that captures semantic relationships and similarities
+            between objects.
+          </li>
+          <li>
+            Lazy initialization is the tactic of delaying the creation of an
+            object or calculation of a value until the first time it is needed;
+            this can be used in React's useState() such that you pass a function
+            into useState instead of a direct value so that it will only be
+            excuted once during the initial render to compute the initial value.
+            The appropriate syntax would be: useState(() =>
+            expensiveCalculation());
+          </li>
+        </ul>
+        <p>
+          Today involved a fair bit of socializing. The Recurse Center is a
+          difficult balance between outputting code and socializing with others,
+          and today I just the latter. I attended the 'Entreprenerds' call
+          today, and it was refreshing to talk with others who also had a
+          passion for using code as a means to deliver real-world impact to
+          people. I originally got into coding less for the 'academic' reasons,
+          and more for applied aspects of it.
+        </p>
+        <p>
+          In terms of coding, I implemented the block and character count
+          trackers to my web app, and I also began researching what would be the
+          best way to store any form data that the user may submit. I'd like to
+          avoid implementing a backend/db because I don't find it necessary for
+          the purpose of the application, especially since it'll be relatively
+          small amount of data to cache via LocalStorage. Sometimes I feel like
+          coding is just pushing structured data around from one place to the
+          next.
+        </p>
+        <p>
+          Tomorrow, I'd to think more intentionally about other projects,
+          teach-ins, and coursework I'm pursuing while at The Recurse Center.
+          For example, there's a browser engineering group that I haven't been
+          able to attend lately, but I'd really like to learn more about! Also,
+          I'm looking into a DSA course offered by UCSD, so I should start a few
+          intro courses to get a sense of the curriculum.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
