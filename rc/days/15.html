@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 15 - Game Start, Loop, & End</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            Packing algorithms are methods used to arrange objects within a
+            container in an efficient way, and are widely used in comptuer
+            science for memory allocation. Types of packing algorithms include
+            the first-fit, best-fit, worst-fit, and next-fit algorithms.
+          </li>
+          <li>
+            A game loop is a continuous loop that runs throughout the life of a
+            game, and it is responsible for updating the game state, rendering,
+            and timing. requestAnimationFrame() is a browser API which is used
+            to schedule a callback function that will be executed before the
+            next repaint of the browser; the callback function also receives
+            timestamp parameter which allows you the calculate the time elapsed
+            between frames and update the animation state.
+          </li>
+          <li>
+            Collision detection is the process of determining when two or more
+            objects in a game interact with each other, and types of collision
+            detection include Bounding Box Collision, Pixel-Perfect Collision,
+            Spatial Partitioning, and Physical Simulation. getClientRect() is a
+            method which provides information about the position and size of an
+            HTML element relative to the viewport, and it can be used in
+            Axis-Aligned Bounding Box collision detection to check if two
+            rectangular areas are overlapping.
+          </li>
+        </ul>
+        <p>
+          Pair programming has been incredibly helpful because it's helped me to
+          identify my strengths and weaknesses as a programmer. By working with
+          others, I've learned I'm a really effective communicator with an
+          incisive mind, but that I still
+        </p>
+        <p>
+          Today, I created the movement-based component to our game by creating
+          an element that takes user input and moves within the bounds of a
+          confined space. Additionally, I created another element that moved
+          across the screen and would alert the user that the game is over when
+          the two elements collided.. Through this experience, I learned more
+          about game loops and collision detection.
+        </p>
+        <p>
+          Tomorrow, I'd to start stylizing the game environment to make it feel
+          more like a game; the goal is to create the sense that a user is
+          helping navigate a car on the highway and simultaneously dodging
+          obstacles along the way.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
