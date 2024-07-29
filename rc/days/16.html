@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 16 - Traffic Trouble: A Game</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            There's an audio HTML element to embed audio (e.g. MP3s, WAV, etc.)
+            into a web page, and it includes attributes such as src, controls,
+            autoplay, loop, and muted. Although there is an autoplay attribute,
+            some browsers required user input to toggle the audio track given
+            their autoplay policies; this is done to prevent disruptive content
+            from automatically playing without user consent.
+          </li>
+          <li>
+            JS Modules are a way to organize code by dividing your code into
+            separate files and functions, helping to manage dependencies and
+            avoid global namespace pollution. Named exports allow you to export
+            multiples values from a module using their exact names, whereas
+            default exports allow you to export a single value with any name you
+            choose. Additionally, an HTML script would need to specify
+            type="module" to ensure that the browser processes JS files as
+            modules.
+          </li>
+          <li>
+            getBoundingClientRect(), offsetWidth/Height, and clientWidth/Height
+            are all different ways to access an element's height and width
+            information. However, they all differ ever so slightly.
+            getBoundingClientRect() and offsetWidth/Height both include an
+            element's border, whereas clientWidth/Height excludes borders.
+            Additionally, getBoundingClientRect() takes CSS transformations into
+            account, whereas the other two do not.
+          </li>
+        </ul>
+        <p>
+          We've made a game. I'm not quite sure it's a particularly thrilling
+          game, but it's a game nonetheless. Well, technically we've made two
+          separate games, and we'll need to combine them into one. I've made the
+          part of the game that simulates movement in a car between rounds,
+          whereas my partner made the part which displays the traffic signs for
+          the user to select from.
+        </p>
+        <p>
+          Today, I added styling to the game, including images for the car and
+          obstacles, as well as correcting the design of the road and
+          environment. Additionally, I added a start button to cue Willie
+          Nelson's 'On the Road Again', as well as a Game Over sign should the
+          user collide into one of the obstacles.
+        </p>
+        <p>
+          Tomorrow, we'll have to merge our games together ahead of demo day. I
+          imagine combining the logic will be a bit troublesome, especially
+          considering that my game incorporates a game loop which we'll have to
+          think about as we integrate the two games.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
