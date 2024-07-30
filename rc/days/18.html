@@ -52,30 +52,52 @@
         <h2>Day 18 - OOP Refactoring</h2>
         <p>Today I learned...</p>
         <ul class="til-list">
-          <li>Class vs Function Object Constructing</li>
-          <li>Lisp programming language</li>
-          <li>Cancellable JavaScript promise</li>
+          <li>
+            Regarding Object-Oriented Programming in JavaScipt, there are both
+            class and function constructors to create objects. Function
+            constructors use the function ConstructorName() {} syntax, whereas
+            Class constructors use the class ClassName{} syntax. People seem to
+            find the class constructor syntax more appealing, but I honestly
+            find the function constructor more intuitive.
+          </li>
+          <li>
+            Handling user keyboard input within a game loop requries using the
+            keydown and keyup event listeners to update the 'active' state of a
+            key within an object data structure outside of the game loop and
+            subsequently checking the status of these keys within the game loop
+            to inform the relevant function/action.
+          </li>
+          <li>
+            .hasOwnProperty is a JS method to check for properties that exist
+            directly on an object itself and not inherited from the prototype
+            chain.
+          </li>
         </ul>
         <p>
-          Most notably, today involved a feelings check-in, and I deeply
-          appreciated it. It's a bit surprising how fast 3 weeks has gone by,
-          and at times I often feel like I haven't accomplished much. Perhaps
-          it's not the best metric, but I tie accomplishments to projects, and I
-          currently only have one that's still a WIP. In that way, have I
-          accomplished much? Yes, I have. Progress is not linear, and it was
-          reassuring to hear others feel the same way.
+          Today involved a lot of refactoring - it was interesting because
+          although I was making improvements to the logical flow and readability
+          of my code, there wasn't many changes to the user experience for the
+          gamer. That felt a bit odd intitially, but it reminded me that coding
+          is both about creating experience for users and other developers who
+          would read your code.
         </p>
         <p>
-          In terms of coding, there was very little. I started an online course
-          offered by UCSD in Data Structures & Algorithms, so I started watching
-          a few of their videos and worked through a few problems. The course
-          seems to cover unit testing as well, which I'm excited about since I'm
-          unfamiliar with how to test my code.
+          There were two big goals I sought to accomplish with this day of
+          refactoring. (1) Improve the frame rate of the car when a user entered
+          keyboard input by transitioning this logic into the gameloop & (2)
+          change the obstacles to be dynamically generated and spawning at
+          intervals from the top of the screen. I accomplished both, although
+          there is much more work to be done with (2), given that I need to
+          append these obstacles to a list and loop through this list with my
+          movement function to make sure all obstacles that spawn are moving
+          downwards.
         </p>
         <p>
-          Tomorrow, I'd to refactor my code for my existing React writing app,
-          start templating the code/structure for my Google extension, and
-          continue working through the UCSD DSA course.
+          I'm still a bit unsure as to whether I'll continue this project into
+          next week, or if I should start another project I've been a bit
+          excited about exploring regarding chrome extension. I would like to
+          revisit this project and finish refactoring my code to be more
+          object-oriented, but I might table this project for the time being.
         </p>
       </main>
     </div>
