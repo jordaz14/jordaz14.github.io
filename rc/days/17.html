@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 17 - Demo Day</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            Folk computing refers to the everyday use of computing systems and
+            technologies, outside of professional/academic settings, in which
+            people make technology work for practical/specific needs. For
+            example, creating scripts in Python or JavaScript can be considered
+            a form of folk computing.
+          </li>
+          <li>
+            The Lisp programming language, deriving its name from 'LISt
+            Processing', is the oldest high-level programming language, and its
+            fundamental data structure are lists; Lisp is uniquely known for
+            homoiconicity, in which the primary representation of code and the
+            data structures they manipulate are the same, which consequently
+            supports metaprogramming, the technique of designing a program which
+            can generate or transform other programs (even itself).
+          </li>
+          <li>
+            JavaScript does not natively support cancellable promises, but there
+            are custom methods to implement this ability. Uses cases for
+            cancellable promises involve when a use may navigate from a page and
+            the developer needs to a cancel a network request to limit resource
+            use.
+          </li>
+        </ul>
+        <p>
+          Today was demo day, and unfortunately, we did not present. It was a
+          bit discouraging, since it often feels like success needs to culminate
+          in big moments like representations, but I'm still proud of the
+          progress I made when it came to better understanding game development
+          in the browser. For example, I'm much more comfortable with element
+          positioning, collision detection, game loops, and user keyboard input.
+        </p>
+        <p>
+          As for coding today, my partner and I experimented with different ways
+          to merge our two games. Since they were effectively two distinct games
+          with different logic and styling, we opted for simply redirecting the
+          url when the two games needed to switch between each other. However,
+          to solve for data persistency issues regarding key data (e.g. round &
+          score tracking), we cached this data in sessionStorage.
+        </p>
+        <p>
+          Tomorrow, I'd to refactor the game to be more object-oriented. As it
+          stands, it's fairly imperative, and it's not a very scalable
+          implementation of the game if the user would like to add different
+          types of obstacles or incorporate other movement into the scene. I'm
+          not quite sure I'll finish the refactoring tomorrow, but I'd like to
+          have a new structure from which to build off of.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
