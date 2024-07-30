@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 19 - Chrome Extension</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            In the context of browser extensions (particularly Chrome), there
+            are popup scripts, content, and background scripts. Popup scripts
+            control the popup interface of the extension; content scripts allow
+            interaction with the web page; and, background scripts run in the
+            background even when the popup is not open, enabling control and
+            communication of browser events between the popup and content
+            scripts.
+          </li>
+          <li>
+            Content injection refers to modifying content on a webpage by a
+            script or extension; However, some sites block content injection
+            (e.g. Google) due to security concerns. For example, I could inject
+            elements and stylize the Recurse website via my extension, but I
+            couldn't do the same for any Google pages. This was helpful to learn
+            when I couldn't figure out why my extension was never working on
+            Chrome's extensions web page.
+          </li>
+          <li>
+            There are a handful of different ways to incorporate environment
+            variables (i.e. server vs client side), and I'm typically used to
+            incorporating them on the server side using the 'dotenv' package,
+            but there was a neat workaround to use a Chrome Extensions API via
+            chrome.runtime.getURL to fetch a JSON config file containing my
+            environment variable.
+          </li>
+        </ul>
+        <p>
+          Today was a productive day, and I'm quite proud of the progress I made
+          in such a short period of time with my chrome extension. The goal is
+          to build a chrome extension which queries the title of the active tab,
+          uses the OpenAI API to provide a song request based off the tone of
+          title, and feeds this request to one of Spotify's endpoints which
+          would play a song within the browser.
+        </p>
+        <p>
+          I originally tried configuring my chrome extension for React, but
+          decided soon after that I was likely over complicating the project by
+          using React. Subsequently, I learned more about popup, background, and
+          context scripts within the context of chrome extensions & used them to
+          play an audio file that would run in the background even if the
+          extension popup was closed. I also incorporated the ChatGPT API into
+          my project and used it to provide a recommended song in the popup
+          element pertaining to the mood of the page title.
+        </p>
+        <p>
+          Tomorrow, I'd to read through the Spotify API documentation to
+          understand how I can use one of their endpoints to POST my song
+          request provided by the OpenAI API and play it within my chrome
+          extension. Admitteldy, I think the Spotify API integration may be the
+          most difficult, so we will see how I progress tomorrow.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
