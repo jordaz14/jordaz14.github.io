@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 20 - OAuth2 Flow</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            OAuth2 is an authorization framework that allows apps to access user
+            resources, and it consists of different authorization flows. Client
+            credentials flow is used for when you don't need access to
+            user-related info, and it felt fairly straightforward to implement
+            relative to any other API I've worked with. However, I needed to
+            refactor to an implicit authorization flow when realizing I needed
+            the user's playback controls but did not have server side logic to
+            implement the recommended authorization code flow.
+          </li>
+          <li>
+            chrome.action.onClicked is a event from the Chrome Extensions API
+            which listens for a click when a user clicks the extension's icon.
+            However, any Listeners add to this action will not work if you have
+            a popup component to your extension; this is because the config file
+            for the extension is specifying the default action of clicking the
+            exension icon to instead open your popup html.
+          </li>
+          <li>FastAPI, JSON Schema, Phind</li>
+        </ul>
+        <p>
+          Today was a productive day, and I'm quite proud of the progress I made
+          in such a short period of time with my chrome extension. The goal is
+          to build a chrome extension which queries the title of the active tab,
+          uses the OpenAI API to provide a song request based off the tone of
+          title, and feeds this request to one of Spotify's endpoints which
+          would play a song within the browser.
+        </p>
+        <p>
+          I originally tried configuring my chrome extension for React, but
+          decided soon after that I was likely over complicating the project by
+          using React. Subsequently, I learned more about popup, background, and
+          context scripts within the context of chrome extensions & used them to
+          play an audio file that would run in the background even if the
+          extension popup was closed. I also incorporated the ChatGPT API into
+          my project and used it to provide a recommended song in the popup
+          element pertaining to the mood of the page title.
+        </p>
+        <p>
+          Tomorrow, I'd to read through the Spotify API documentation to
+          understand how I can use one of their endpoints to POST my song
+          request provided by the OpenAI API and play it within my chrome
+          extension. Admitteldy, I think the Spotify API integration may be the
+          most difficult, so we will see how I progress tomorrow.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
