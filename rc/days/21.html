@@ -52,34 +52,58 @@
         <h2>Day 21 - Flexing ChatGPT</h2>
         <p>Today I learned...</p>
         <ul class="til-list">
-          <li>ChatGPT temperature</li>
-          <li>ChatGPT tokens</li>
-          <li>FastAPI, JSON Schema, Phind</li>
+          <li>
+            In the context of large language models (LLMs), a token is a unit of
+            text that the model considers the smallest unit of processing per
+            the model's tokenizer. Each tokens has a specificed number of
+            characters, and they are often used as the unit of billing for
+            usage.
+          </li>
+          <li>
+            Temperature is another concept used in LLMs which refers to a
+            parameter which controls the randomness of a model's response,
+            influencing how likely a model is to choose less probable words over
+            more probable ones in its response. For example, a temperature of 0
+            refers to a model picking the highest-probability token, whereas a
+            temperature of 1 indicates the model picking much less coherent
+            tokens.
+          </li>
+          <li>
+            PUT vs POST are two HTTP methods to send data to a server. I've
+            often used POST requests to send form data to a server, but I was
+            less familiar with the use cases of a PUT request. It is best to
+            decide whether to use a PUT or POST request based on the idempotence
+            of the action. Thus, a PUT request will replace whatever is at a
+            given URL and return the same response regardless of how many
+            requests I make, whereas a POST request will create a resource or
+            cause a change in the server that will return a different response
+            each time. e.g. PUT x=10 vs POST x++;
+          </li>
         </ul>
         <p>
-          Today was a productive day, and I'm quite proud of the progress I made
-          in such a short period of time with my chrome extension. The goal is
-          to build a chrome extension which queries the title of the active tab,
-          uses the OpenAI API to provide a song request based off the tone of
-          title, and feeds this request to one of Spotify's endpoints which
-          would play a song within the browser.
+          Although there is still work to be done, I've finished a demo of my
+          chrome extension, and I'm quite proud of it. Although I've improved
+          substantially as a programmer the past few weeks, I've yet to make
+          anything I found substantive and useful, but that changed as of today.
         </p>
         <p>
-          I originally tried configuring my chrome extension for React, but
-          decided soon after that I was likely over complicating the project by
-          using React. Subsequently, I learned more about popup, background, and
-          context scripts within the context of chrome extensions & used them to
-          play an audio file that would run in the background even if the
-          extension popup was closed. I also incorporated the ChatGPT API into
-          my project and used it to provide a recommended song in the popup
-          element pertaining to the mood of the page title.
+          Today, I read through the Spotify API docs to develop a better
+          understanding of which endpoints I would need to use for my
+          application, and thankfully, it was quite simple. Once I retreived a
+          song recommendation response from the OpenAI API, I simply needed to
+          fetch the Spotify URI of the song, identify the active device the user
+          had spotify on, and submit the URI to relevant device to begin
+          playback. Additionally, I added a form element for the user to filter
+          song recommendations by genre or artist.
         </p>
         <p>
-          Tomorrow, I'd to read through the Spotify API documentation to
-          understand how I can use one of their endpoints to POST my song
-          request provided by the OpenAI API and play it within my chrome
-          extension. Admitteldy, I think the Spotify API integration may be the
-          most difficult, so we will see how I progress tomorrow.
+          Tomorrow, I'd like to stylize the chrome extension to look more
+          visually appealing. Additionally, I plan to add another UI element
+          which displays the current song which is playing in the user's spotify
+          application. Given that the extension doesn't always recommend a song
+          which actually exists, it'd be helpful for the user to get immediate
+          feedback on what song is playing in their spotify app without having
+          to toggle windows.
         </p>
       </main>
     </div>
