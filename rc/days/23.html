@@ -49,7 +49,7 @@
         </div>
       </nav>
       <main>
-        <h2>Day 20 - OAuth2 Flow</h2>
+        <h2>Day 23 - Friday</h2>
         <p>Today I learned...</p>
         <ul class="til-list">
           <li>
@@ -70,35 +70,32 @@
             for the extension is specifying the default action of clicking the
             exension icon to instead open your popup html.
           </li>
-          <li>
-            JSON Schemas are a way to validate the structure of JSON data by
-            defining the format, data types, and constraints, and it can be used
-            in the OpenAI API to adhere a response to the scheme. Although I
-            have not used this feature, there is also a library called 'Ajv'
-            which can be used to simply validate a scheme.
-          </li>
+          <li>FastAPI, JSON Schema, Phind</li>
         </ul>
         <p>
-          Today, I learned more about OAuth2; I had often heard about it, but I
-          wasn't quite sure what it entailed, the terminology, or even the
-          different types of OAuth2 flow that existed! I read about the
-          differences between authorization code flow vs. implicit flow vs.
-          client credentials flow, and I determined that implicit flow would
-          best serve my use case since I didn't have a backend to store an
-          authorization code.
+          Today was a productive day, and I'm quite proud of the progress I made
+          in such a short period of time with my chrome extension. The goal is
+          to build a chrome extension which queries the title of the active tab,
+          uses the OpenAI API to provide a song request based off the tone of
+          title, and feeds this request to one of Spotify's endpoints which
+          would play a song within the browser.
         </p>
         <p>
-          Today, I added the implicit auth flow for my Spotify API, as well as
-          tested a few types of endpoints to get a sense of their API. As it
-          stands, my extension can play a song from the Spotify app, but I
-          haven't refactored the code to flow ChatGPT's response to Spotify.
-          Additionally, I added a JSON schema for ChatGPT's responses, ensuring
-          that I response in JSON format and matches my specified requirements.
+          I originally tried configuring my chrome extension for React, but
+          decided soon after that I was likely over complicating the project by
+          using React. Subsequently, I learned more about popup, background, and
+          context scripts within the context of chrome extensions & used them to
+          play an audio file that would run in the background even if the
+          extension popup was closed. I also incorporated the ChatGPT API into
+          my project and used it to provide a recommended song in the popup
+          element pertaining to the mood of the page title.
         </p>
         <p>
-          Tomorrow, I'd to stylize the extension a bit more and connect
-          ChatGPT's response in the popup script to the Spotify API in the
-          background script. 
+          Tomorrow, I'd to read through the Spotify API documentation to
+          understand how I can use one of their endpoints to POST my song
+          request provided by the OpenAI API and play it within my chrome
+          extension. Admitteldy, I think the Spotify API integration may be the
+          most difficult, so we will see how I progress tomorrow.
         </p>
       </main>
     </div>
