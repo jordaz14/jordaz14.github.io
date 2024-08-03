@@ -52,41 +52,50 @@
         <h2>Day 22 - Demo Day: Tab Tunes</h2>
         <p>Today I learned...</p>
         <ul class="til-list">
-          <li>ChatGPT temperature</li>
           <li>
-            chrome.action.onClicked is a event from the Chrome Extensions API
-            which listens for a click when a user clicks the extension's icon.
-            However, any Listeners add to this action will not work if you have
-            a popup component to your extension; this is because the config file
-            for the extension is specifying the default action of clicking the
-            exension icon to instead open your popup html.
+            I've known about web development agencies for a while now, and I was
+            particularly interested in joining one for my professional career,
+            but I've learned more about the industry from another Recurser who's
+            worked in it most of their life. They characterized it as a
+            shrinking industry as social media has drawn users and interest away
+            from the 'experiential' parts of web browsing.
           </li>
-          <li>FastAPI, JSON Schema, Phind</li>
+          <li>
+            Fluid simulation is a computational technique, widely used in
+            computer graphics, engineering, meteorology, and physics, to model
+            the behavior of fluids in various environments, helping to explain
+            phenomena likes waves and turbulence. Additionally, there are two
+            main times of fluid simulation methods: Eulerian and Lagrangian.
+            Eulerian methods are grid-based, computing fluid properties in each
+            grid cell, whereas Lagrangian methods are particle-based and
+            calculate the motion of particles.
+          </li>
+          <li>
+            There's a web development program offered by Adobe which opens in
+            October. I'd like to look into it more and see if I'd be a good fit.
+          </li>
         </ul>
         <p>
-          Today was a productive day, and I'm quite proud of the progress I made
-          in such a short period of time with my chrome extension. The goal is
-          to build a chrome extension which queries the title of the active tab,
-          uses the OpenAI API to provide a song request based off the tone of
-          title, and feeds this request to one of Spotify's endpoints which
-          would play a song within the browser.
+          I demoed my chrome extension today! I was really proud of what I made,
+          and it was really rewarding to see other people liked it as well when
+          I presented it during demo presentations. It was a big moment for me
+          as well because I finally felt like I could "hold my own" as a coder..
+          That's not to say that I know everything, but rather that continuous
+          learning is part of being a good coder.
         </p>
         <p>
-          I originally tried configuring my chrome extension for React, but
-          decided soon after that I was likely over complicating the project by
-          using React. Subsequently, I learned more about popup, background, and
-          context scripts within the context of chrome extensions & used them to
-          play an audio file that would run in the background even if the
-          extension popup was closed. I also incorporated the ChatGPT API into
-          my project and used it to provide a recommended song in the popup
-          element pertaining to the mood of the page title.
+          Aside from adding some finishing touches to the style of my chrome
+          extension, I tweaked with the OpenAI API a lot. I'm not sure I'd
+          consider it prompt engineering, but changing the tone and structure of
+          prompts had a huge change in the quality of its responses. For
+          example, I noticed that asking ChatGPT to identify the mood of a topic
+          and then recommend a song related to the mood was a bit superfluous &
+          that it produced much better responses if I simply asked it to
+          provides songs related to the topic.
         </p>
         <p>
-          Tomorrow, I'd to read through the Spotify API documentation to
-          understand how I can use one of their endpoints to POST my song
-          request provided by the OpenAI API and play it within my chrome
-          extension. Admitteldy, I think the Spotify API integration may be the
-          most difficult, so we will see how I progress tomorrow.
+          Tomorrow, I'd to read the crafting interpreters books, revisit my game
+          from last week, and refactor my chrome extension code to be cleaner.
         </p>
       </main>
     </div>
