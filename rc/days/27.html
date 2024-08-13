@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 27 - Halfway there...</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            An interpreter is a program designed in one language (e.g. Java, C,
+            etc.) to execute code written in another language line by line; this
+            differs from a compiler in that compilers typically translate the
+            entire source code into machine code to create an executable.
+            (although a compiler can simply be used for translating one language
+            into any other).
+          </li>
+          <li>
+            I've used 'this' before, but I got more clarity when solving a quick
+            bug; I called the 'this' keyword in an object nested within another
+            object, and I originally thought it would apply to the parent
+            object, only to remember that 'this' refers directly to the context
+            (i.e. object) in which it is called.
+          </li>
+          <li>
+            Tokens, although used in LLMs, is also a term used in lexical
+            analysis for interpreters; lexical analysis refers to the process of
+            converting raw input text into a sequence of tokens, subsequently
+            allowing for the analysis of the token sequence to build a data
+            structure representing the grammatical structure of the program.
+          </li>
+        </ul>
+        <p>
+          Before I embarked on any new projects, I thought it'd be good to
+          finish the traffic trouble game I started a couple weeks ago. After
+          finishing my chrome extension, I've learned that completing projects
+          is very rewarding (after having done a handful of projects that never
+          quite saw the light of day).
+        </p>
+        <p>
+          Throughout the day, I both refactored some of the game code to be more
+          object-oriented & added additional functionality to the game (e.g.
+          moving + collision detector to every randomly spawned obstacle, score
+          tracker, moving scenery, and keyboard arrow icons to indicate the
+          correct input to the user). I hope to user these keyboard arrow icons
+          for the mobile version, assuming I make this responsive.
+        </p>
+        <p>
+          Tomorrow, I'd to incorporate difficulty levels to my traffic game, add
+          a mute button, stylize the obstacles/scenery items a bit more, and
+          refactor the 'start game' modal; I hope to finish the game by
+          tomorrow, but we shall see. Additionally, I need to finish chapter
+          four of 'crafting interpreters' ahead of the group meeting on
+          Wednesday.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
