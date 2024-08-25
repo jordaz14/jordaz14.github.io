@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 34 - Measuring Connection Times</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            Chrome Performance API is a set of web APIs supported by modern
+            browsers that developers can use to measure the performance of their
+            web apps. Features of the Performance API include timestamps,
+            navigation timing, resource timing, and paint timing. More
+            specifically, PerformanceNavigationTiming can be used for measuring
+            DNS & TCP connection times.
+          </li>
+          <li>
+            There are three versions of HTTP: 1.0, 1.1, 2, and 3. With regard to
+            connection handling, 1.0 creates a new TCP for each request; 1.1
+            allows multiple requests and responses to be sent over a single TCP
+            connection; 2 allows multiple for multiple requests being sent over
+            a single connection simultaneously, avoiding blocking issues; 3 uses
+            the QUIC transport protocol, based on UDP.
+          </li>
+          <li>
+            A HTTP Archive (HAR) file is a JSON-formatted text file used to
+            record the network activity of a web browser, and it contains
+            request/response, timing, and resource information.
+          </li>
+        </ul>
+        <p>No further commentary for today.</p>
+        <p></p>
+        <p></p>
+      </main>
+    </div>
+  </body>
+</html>
