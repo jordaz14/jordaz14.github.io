@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./assets/circle-outline.png" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <div class="nav-title">
+          <div class="title-opener">
+            <a href="../">
+              <div class="icon">
+                <img src="../assets/home-logo.png" alt="home icon" />
+              </div>
+              <p>@</p>
+            </a>
+          </div>
+          <div class="title-recurse">
+            <a href="https://www.recurse.com/" target="_blank">
+              <h1>The Recurse Center</h1>
+              <div class="icon">
+                <img src="../assets/rc-logo.png" alt="recurse logo" />
+              </div>
+            </a>
+          </div>
+          <p>Julian Ordaz</p>
+        </div>
+        <div class="nav-contact">
+          <p>Want to talk?</p>
+          <div class="contact-icons">
+            <div class="icon">
+              <a href="https://github.com/jordaz14" target="_blank">
+                <img src="../assets/github-logo.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="icon">
+              <a
+                href="https://www.linkedin.com/in/julianordaz/"
+                target="_blank"
+              >
+                <img src="../assets/linkedin-logo.png" alt="linkedin logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2>Day 33 - Modules & Runtime Environments</h2>
+        <p>Today I learned...</p>
+        <ul class="til-list">
+          <li>
+            There are two module systems in JavaScript: CommonJS (CJS) &
+            ECMAScript Modules (ESM). CJS was introduced for server-side
+            JavaScript, and modules are loaded synchronously with the require()
+            / .export syntax. ESM was introduced as part of the ES6 standard and
+            is the official standard for JS modules in browsers & Node.js;
+            modules are loaded asynchronously with the import {} / export
+            syntax.
+          </li>
+          <li>
+            Bun is another JavaScript runtime environment which uses the
+            JavaScriptCore engine, as opposed to Chrome's V8 engine, and was
+            built to be faster and more efficient than Node.js. Additionally,
+            Bun offers native support for TypeScript / JSX and is compatible
+            with most NPM packages. However, Bun focuses on ESM and does not
+            support CS modules natively.
+          </li>
+          <li>
+            A SQL injection attack is when an attacker can inject malicious SQL
+            code into a query, allowing them to perform tasks such as bypassing
+            authentication, retrieve data, and potentially delete or modify
+            database contents. To avoid this, a developer should sanitize user
+            input and ensure that the queries accept parameters for any
+            placeholders, ensuring that any user input passed through is executed
+            as data and not considered part of the SQL code.
+          </li>
+        </ul>
+        <p>No further commentary for today.</p>
+        <p></p>
+        <p></p>
+      </main>
+    </div>
+  </body>
+</html>
